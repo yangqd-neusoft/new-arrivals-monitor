@@ -9,6 +9,7 @@ Monitor the new arrivals of “xiao mian ao”, send a mail to Qian when there a
 
 [百度](https://www.baidu.com "baidu")
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+[百度](https://www.baidu.com "baidu")
 
 ```python
 #!/usr/bin/python
