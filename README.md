@@ -36,14 +36,12 @@ import re
     def _loadFinished(self, result):
       self.frame = self.mainFrame()
       self.app.quit()
-  ```
-  ```python
   url = 'http://pycoders.com/archive/'
   # This does the magic.Loads everything
   r = Render(url)
   # Result is a QString.
   result = r.frame.toHtml()
-  ```
+  
 * 4.以上的代码，将HTML结果储存到变量result中，lxml无法直接处理该特殊的字符串数据，需要转换数据格式
   ```python
   # QString should be converted to string before processed by lxml
