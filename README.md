@@ -102,5 +102,6 @@ Monitor the new arrivals of “xiao mian ao”, send a mail to Qian when there a
   print(result_tree)
   ```
 
-## 操作工具
-* 1.Pyv8，PythonWebKit，Selenium，PhantomJS，Ghost.py  等等。。。。
+## PS：
+* 1.操作工具  Pyv8，PythonWebKit，Selenium，PhantomJS，Ghost.py  等等。。。。
+* 2.[静觅博客](http://cuiqingcai.com/ "博客")
