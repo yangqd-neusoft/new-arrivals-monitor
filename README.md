@@ -11,12 +11,6 @@ Monitor the new arrivals of “xiao mian ao”, send a mail to Qian when there a
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
 [百度](https://www.baidu.com "baidu")
 
-```python
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
-import re
-```
-
 ## 关于动态js页面的爬取，方案一：
 * 1.lxml与BeautifulSoup的选择，lxml利用元素遍历法来处理数据，BeautifulSoup利用正则表达式来提取数据
 * 2.Web kit属于QT库的一部分，安装QT和PyQT4库，可以实现浏览器所能处理的任何事情
