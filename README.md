@@ -3,9 +3,8 @@ Monitor the new arrivals of “xiao mian ao”, send a mail to Qian when there a
 
 ## crawler`关键点`：
 * 1.商品编号
-* 2.新品页面的第一个商品
-* 3.当前商品按顺序的下一个商品
-* 4.图文信息
+* 2.遍历页面内的商品
+* 3.图文信息
 
 [百度](https://www.baidu.com "baidu")
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
