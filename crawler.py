@@ -69,6 +69,9 @@ def monitorNew():
         first_item = first_item3line1.find_element_by_tag_name("dl")
         dataID = first_item.get_attribute("data-id")
         if not SQLite_inst.select(dataID):
+            fo = open(PATH_LOG, "a")
+            fo.write( time.asctime(time.localtime(time.time())) + " There are some new arrvals!" + '\n' )
+            fo.close()
             dirList = []
             flag_break = False
             elements_item3line1s = browser.find_elements_by_class_name("item3line1")
