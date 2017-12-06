@@ -13,9 +13,8 @@ from database import SQLite
 from mail import sendMail
 
 URL = ""
-PATH_DB = ""
-PATH_LOG = ""
-LIST_DIR = []
+PATH_DB = "xiaomianao.db"
+PATH_LOG = "log.txt"
 TIME_SPACE = 600
 
 SQLite_inst = SQLite(PATH_DB)
@@ -80,19 +79,19 @@ def monitorNew():
                 elements_items = item3line1.find_elements_by_tag_name("dl")
                 for dl in elements_items:
                     if flag_break: break
-                    dataID = dl.get_attribute("data-id")
+                    dataID = str(dl.get_attribute("data-id"))
                     if not SQLite_inst.select(dataID):
                         os.mkdir(dataID)
                         dirList.append(dataID)
                         img = dl.find_element_by_tag_name("img")
                         text = img.get_attribute("adl")
-                        fo = open("info.txt", "wb")
+                        fo = open("%s\\info.txt" % dataID, "wb")
                         fo.write(text)
                         fo.close()
                         imgURL = "https:"+img.get_attribute("src")
                         imgRequest = requests.get(imgURL)
                         image = imgRequest.content
-                        fo = open("photo.jpg", "wb")
+                        fo = open("%s\\photo.jpg" % dataID, "wb")
                         fo.write(image)
                         fo.close()
                         SQLite_inst.insert(dataID)
