@@ -29,7 +29,7 @@ def saveDataID():
     except Exception as e:
         browser.quit()
         fo = open(PATH_LOG, "a")
-        fo.write( time.asctime(time.localtime(time.time())) + str(e) + '\n' )
+        fo.write( time.asctime(time.localtime(time.time())) + ' ' + str(e) + '\n' )
         fo.close()
         return
     time.sleep(3)
@@ -48,7 +48,7 @@ def saveDataID():
             time.sleep(3)
         except Exception as e:
             fo = open(PATH_LOG, "a")
-            fo.write( time.asctime(time.localtime(time.time())) + str(e) + '\n' + "Completed save of %s pages of commodity dataID" % str(saveDB_count) + '\n' )
+            fo.write( time.asctime(time.localtime(time.time())) + ' ' + str(e) + '\n' + "Completed save of %s pages of commodity dataID" % str(saveDB_count) + '\n' )
             fo.close()
             break
     browser.quit()
@@ -61,7 +61,7 @@ def monitorNew():
         except Exception as e:
             browser.quit()
             fo = open(PATH_LOG, "a")
-            fo.write( time.asctime(time.localtime(time.time())) + str(e) + '\n' )
+            fo.write( time.asctime(time.localtime(time.time())) + ' ' + str(e) + '\n' )
             fo.close()
             return
         time.sleep(3)
